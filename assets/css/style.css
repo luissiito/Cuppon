@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
-    padding: 0;
-    margin: 0;
+    padding: 0 !important;
+    margin: 0 !important;
     font-family: "Roboto", sans-serif;
+    font-weight: 300 !important;
 }
 
 nav{
@@ -12,4 +13,34 @@ nav{
 }
 nav a{
     color: #FFFFFF;
+}
+
+main{
+    padding-bottom: 1.5em !important;
+    padding-left: 1.5em !important;
+    padding-right: 1.5em !important;
+}
+main .container .card{
+    margin-top: 1.7em !important;
+}
+main .container .card img{
+    height: 15em;
+}
+main .container .card .card-body{
+    padding:1em !important;
+}
+main .container .card .card-body:nth-child(3){
+    gap: .7em;
+}
+main .container .card .card-body .card-title{
+    margin-bottom: .5em !important;
+}
+main .container .card .card-body .precio{
+    font-size: 1.2em;
+}
+main .container .card .card-body .precioDeOferta{
+    position: relative;
+    top: -.4em;
+    font-size: 1.4em;
+    font-weight: 500 !important;
 }

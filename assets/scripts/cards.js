@@ -6,8 +6,8 @@ export function cargarInformacionALasCards() {
         cards[i].querySelector('img').src = productos[i].getUbicacionDeLaImagen();
         cards[i].querySelector('.card-title').textContent = productos[i].getTitulo();
         cards[i].querySelector('.nombreDelVendedor').textContent = productos[i].getVendedor().getNombre();
-        cards[i].querySelector('.direccionDelVendedor').textContent = productos[i].getVendedor().getDireccion();
-        cards[i].querySelector('.precioDeOferta').textContent = productos[i].getPrecioDeOferta();
-        cards[i].querySelector('.precio').textContent = productos[i].getPrecio();
+        cards[i].querySelector('.direccionDelVendedor').textContent = productos[i].getVendedor().getDireccion();        
+        cards[i].querySelector('.precio').textContent = `$${productos[i].getPrecio()}`;
+        cards[i].querySelector('.precioDeOferta').textContent = `$${productos[i].getPrecioDeOferta()}`;
     }
 }
